@@ -1,0 +1,15 @@
+name: MSWSplex
+main: mc.bukkit.MSWS.MSWSplex.Main
+version: 2.0.2
+soft-depend: [GameManager]
+commands:
+   updaterank:
+      description: Updates a player's rank
+      usage: /<command> <player> <rank>
+      permission: mswsplex.rank.support
+   unpunish:
+      description: (CONSOLE ONLY)
+      usage: /<command> [player] [punishment|all] [reason]
+   e:
+      description: Event Settings
+      usage: /<command> <setting>

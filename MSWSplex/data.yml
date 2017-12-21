@@ -1,0 +1,20 @@
+#Default scoreboard, no line can be repeated (use &r s)
+Scoreboards:
+  default:
+    lines:
+    - '&b&lServer'
+    - '%server%'
+    - ''
+    - '&a&lGems'
+    - '%gems%'
+    - '&r'
+    - '&e&lShards'
+    - '%shards%&r'
+    - '&r&r'
+    - '&6&lRank'
+    - '%rank%'
+    - '&r&r&r'
+    - '&c&lWebsite'
+    - www.mineplex.com
+    - '----------------'
+    name: 'Welcome %player%, to the Mineplex Network!      ' 

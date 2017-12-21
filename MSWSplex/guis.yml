@@ -1,0 +1,752 @@
+#This file contains all of the data used to load up most of the GUIs
+#(Such as /p, chest purchase, etc) (Chat colors supported)
+#Format:
+#InventoryName:                     | Must be unique
+#  name: (String, required)         | The name that will be at the top of the inventory
+#  GlassPanes: (boolean, optional)  | Whether or not glass panes will fill up empty slots
+#  item1:                           | Defines a new item, must be unique within InventoryName
+#    slot: (integer, required)      | What slot the item will be in
+#    icon: (item type, required)    | Icon used, EGG, SPONGE, etc
+#    amount: (integer, required)    | How many of the item will be in the slot
+#    lore: (String list, optional)  | Item Lore
+#    data: (integer, optional)      | Item damage (used for wool color, heads, etc)
+#    skullowner: (string, optional) | Username of the skull (set data to 3 if used)
+GameMenu:
+  name: Game Menu
+  size: 54
+  GlassPanes: true
+  bbb:
+    slot: 0
+    icon: EGG
+    name: '&e&lBawk Bawk Battles &7Challenges'
+    amount: 1
+    lore:
+    - ''
+    - Follow Bawk Bawk's instructions
+    - Complete different tasks
+    - If you lose, chickens will devour you!
+  mb:
+    slot: 1
+    icon: LAVA_BUCKET
+    name: '&e&lMicro Battles &7Team Game'
+    amount: 1
+    lore:
+    - ''
+    - 'Small game, big strategy!'
+PrefsMenu:
+  name: My Preferences
+  size: 27
+  GlassPanes: true
+  chatNotify:
+    slot: 16
+    icon: PAPER
+    name: '&a&lJoin Notifications'
+    lore:
+    - If this option is
+    - enabled then you will
+    - receive notifications when
+    - someone joins the server
+  joinNotify:
+    slot: 10
+    icon: PAPER
+    name: '&a&lChat Notifications'
+    lore:
+    - If this option is
+    - enabled then you will
+    - receive notifications when
+    - someone says your username
+    - in chat.
+  privateMSG:
+    slot: 13
+    icon: BOOK_AND_QUILL
+    name: '&a&lPrivate Messaging'
+    lore:
+    - Enabling this will
+    - Allow others to private
+    - message you.
+  kboption:
+    slot: 24
+    icon: NETHER_STAR
+    name: '&a&lLobby Knockback'
+    lore:
+    - Enabling this will
+    - Disable lobby knockback
+    rank: (trainee|mod|srmod|admin|dev|owner|support|leader)
+  globalGWEN:
+    slot: 18
+    icon: PRISMARINE
+    name: '&a&lGlobal GWEN Reports'
+    lore:
+    - See all GWEN reports
+    - No matter the server
+    rank: (trainee|mod|srmod|admin|dev|owner|support|leader)
+ChestMenu1:
+  name: Open Treasure - Page 1
+  size: 54
+  GlassPanes: false
+  oldtreasure:
+    slot: 19
+    icon: CHEST
+    name: '&a&lOld Treasure'
+    lore:
+    - ''
+    - 'Old Chests Owned: &e%oldchests%'
+    - ''
+    - '&7We''ve scoured the lands of Minecraft'
+    - '&7and found these abandoned chests.'
+    - '&7The contents are unknown, but'
+    - '&7according to the inscription on the'
+    - '&7the straps they appear to contain'
+    - '&7many kinds of loot.'
+    - ''
+    - Click to craft for &b1000 Treasure Shards
+    - ''
+    - 'or Purchase at: &ewww.mineplex.com/shop'
+  ancienttreasure:
+    slot: 21
+    icon: CHEST
+    name: '&6&lAncient Treasure'
+    lore:
+    - ''
+    - 'Ancient Chests Owned: &e%ancientchests%'
+    - ''
+    - '&7Some of our bravest adventurers'
+    - '&7have discovered these chests within'
+    - '&7temples hidden in Minecrafts worlds.'
+    - ''
+    - Click to craft for &b5000 Treasure Shards
+    - ''
+    - 'or Purchase at: &ewww.mineplex.com/shop'
+  mythicaltreasure:
+    slot: 23
+    icon: ENDER_CHEST
+    name: '&c&lMythical Treasure'
+    lore:
+    - ''
+    - 'Mythical Chests Owned: &e%mythicalchests%'
+    - ''
+    - '&7All our previous adventurers have'
+    - '&7perished in search of these chests.'
+    - '&7However, legends of their existence'
+    - '&7convinced Sterling, Chiss and Defek7'
+    - '&7to venture out and discover the'
+    - '&7location of these chests on their own.'
+    - ''
+    - Click to craft for &b10000 Treasure Shards
+    - ''
+    - 'or Purchase at: &ewww.mineplex.com/shop'
+  illuminatedtreasure:
+    slot: 25
+    icon: SEA_LANTERN
+    name: '&3&lIlluminated Treasure'
+    lore:
+    - ''
+    - 'Illuminated Chests Owned: &e%illuminatedchests%'
+    - ''
+    - '&7The illuminated chest shines brightly'
+    - '&7in the depths, always bringing a new'
+    - '&7treasure from the darkness.'
+    - ''
+    - Click to craft for &b20000 Treasure Shards
+    - ''
+    - 'or Purchase at: &ewww.mineplex.com/shop'
+  omegatreasure:
+    slot: 38
+    icon: SKULL_ITEM
+    data: 3
+    skullowner: MSWS
+    name: '&3&lOmega Treasure'
+    lore:
+    - ''
+    - 'Illuminated Chests Owned: &e%omegachests%'
+    - ''
+    - '&7The illuminated chest shines brightly'
+    - '&7in the depths, always bringing a new'
+    - '&7treasure from the darkness.'
+    - ''
+    - Click to craft for &b20000 Treasure Shards
+    - ''
+    - 'or Purchase at: &ewww.mineplex.com/shop'
+  minestriketreasure:
+    slot: 40
+    icon: TNT
+    name: '&6&lMinestrike Treasure'
+    lore:
+    - ''
+    - 'Minestrike Chests Owned: &e%minestrikechests%'
+    - ''
+    - '&7The Minestrike Chest is the'
+    - '&7only place to get the unique'
+    - '&7skins for Minestrike weapons!'
+    - ''
+    - Click to craft for &b10000 Treasure Shards
+    - ''
+    - 'or Purchase at: &ewww.mineplex.com/shop'
+  heroesofgwentreasure:
+    slot: 42
+    icon: PRISMARINE
+    data: 2
+    name: '&b&lHeroes of GWEN Treasure'
+    lore:
+    - ''
+    - 'HOG Chests Owned: &e%hogchests%'
+    - ''
+    - '&7Heroes of GWEN exclusive'
+    - '&7cosmetics! Each chest contains'
+    - '&74 exclusive items to the game!'
+    - ''
+    - Click to craft for &b12000 Treasure Shards
+    - ''
+    - '&bor Earn HOG Chests by leveling up Roles with in Heroes of GWEN.'
+  shards:
+    slot: 49
+    icon: PRISMARINE_SHARD
+    name: '&b&l%shards% Treasure Shards'
+    lore:
+    - '&7'
+    - '&7These seem like they might come in'
+    - '&7handy. Maybe I should collect more!'
+  nextpage:
+    slot: 53
+    icon: ARROW
+    name: '&aNext Page'
+ChestMenu2:
+  name: Open Treasure - Page 2
+  size: 54
+  GlassPanes: false
+  oldtreasure:
+    slot: 45
+    icon: ARROW
+    name: '&aGo Back'
+CosmeticMenu:
+  name: Cosmetics
+  size: 54
+  GlassPanes: true
+  particles:
+    slot: 1
+    icon: NETHER_STAR
+    name: '&a&lParticle Effets'
+    lore:
+    - ''
+    - '&7Show everyone how cool you'
+    - '&7are with swirly particles that'
+    - '&7follow you when you walk!'
+    - '&8Visible Everywhere'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+  hats:
+    slot: 7
+    icon: GOLD_HELMET
+    name: '&a&lHats'
+    lore:
+    - ''
+    - '&7Hats are in this year. Wear'
+    - '&7them on your head to impress'
+    - '&7the others.'
+    - '&8Usable in Lobbies'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+  arroweffects:
+    slot: 10
+    icon: ARROW
+    name: '&a&lArrow Effects'
+    lore:
+    - ''
+    - '&7Your arrows will now leave'
+    - '&7particle trails as they soar'
+    - '&7through the air.'
+    - '&7Visible in Games'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+  wineffect:
+    slot: 13
+    icon: CAKE
+    name: '&a&lWin Effects'
+    lore:
+    - ''
+    - '&7Winning a game with your'
+    - '&7friends all good and dandy,'
+    - '&7bug then being able to also'
+    - '&7show off awesome effects is'
+    - '&7even more fun!'
+    - '&8Visible in Games'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+  costumes:
+    slot: 16
+    icon: DIAMOND_CHESTPLATE
+    name: '&a&lCostumes'
+    lore:
+    - ''
+    - '&7Sometimes going out calls for'
+    - '&7special clothes! Gain bonus'
+    - '&7effects for matching outfit.'
+    - '&8Usable in Lobbies'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+  deathanim:
+    slot: 19
+    icon: SKULL_ITEM
+    name: '&a&lDeath Animations'
+    lore:
+    - ''
+    - '&7Your death will now be mourned'
+    - '&7with a wonderful particle'
+    - '&7tribute.'
+    - '&8Visible in Games'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+  gamecosm:
+    slot: 21
+    icon: TORCH
+    name: '&a&lGame Cosmetics'
+    lore:
+    - ''
+    - '&7Cosmetics which are exclusive'
+    - '&7to the game you are playing!'
+    - '&8Visible in Games'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+  ppc:
+    slot: 22
+    icon: DIAMOND
+    name: '&a&lPower Play Club Rewards'
+    lore:
+    - ''
+    - '&7View all of the Power Play'
+    - '&7Club Rewards!'
+    - '&8Visible Everywhere'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+  kitselector:
+    slot: 23
+    icon: LEVER
+    name: '&a&lKit Selector Particles'
+    lore:
+    - ''
+    - '&7Click here to select different'
+    - '&7particles to indicate which kit'
+    - '&7you have selected!'
+    - '&8Visible in Game Lobbies'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+  morphs:
+    slot: 25
+    icon: LEATHER
+    name: '&a&lMorphs'
+    lore:
+    - ''
+    - '&7Have you ever wanted to be a'
+    - '&7tiger? Well, you can''t be a'
+    - '&7tiger! That''s silly! But you can'
+    - '&7be many other things!'
+    - '&8Usable in Lobbies'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+  doublejump:
+    slot: 28
+    icon: GOLD_BOOTS
+    name: '&a&lDouble Jump Effects'
+    lore:
+    - ''
+    - '&7Demonstrate your parkour'
+    - '&7prowess with sweet particles'
+    - '&7when you double jump.'
+    - '&8Visible Everywhere'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+  taunts:
+    slot: 31
+    icon: NAME_TAG
+    name: '&a&lTaunts'
+    lore:
+    - ''
+    - '&7Taunt your enemies or just'
+    - '&7show off. Use /taunt to have'
+    - '&7a good time!'
+    - '&8Visible in Games'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+  flags:
+    slot: 34
+    icon: BANNER
+    name: '&a&lFlags'
+    lore:
+    - ''
+    - '&7Show off your country''s flag!'
+    - '&8Usable in Lobbies'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+  balloon:
+    slot: 47
+    icon: LEASH
+    name: '&a&lBalloons'
+    lore:
+    - ''
+    - '&7Balloons are collectibles that'
+    - '&7you can float above your head'
+    - '&7as you wander the lobby. You'
+    - '&7can have up to 10 balloons in'
+    - '&7your hand at one time.'
+    - '&8Visible in Lobbies'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+  music:
+    slot: 48
+    icon: RECORD_10
+    name: '&a&lMusic'
+    lore:
+    - ''
+    - '&7I JUST WANT TO DANCE WITH'
+    - '&7YOU!'
+    - '&8Usable in Lobbies'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+  gadgets:
+    slot: 49
+    icon: MELON_BLOCK
+    name: '&a&lGadgets'
+    lore:
+    - ''
+    - '&7All sorts of zany contraptions'
+    - '&7to use on your friends and'
+    - '&7foes.'
+    - '&8Usable in Lobbies'
+    - ''
+    - 'You own %gadgetown%/%gadgetamo%'
+    - ''
+    - '&aLeft-Click to View Category'
+  mounts:
+    slot: 50
+    icon: IRON_BARDING
+    name: '&a&lMounts'
+    lore:
+    - ''
+    - '&7Why walk when you can ride?'
+    - '&7Summon fancy mounts to help'
+    - '&7you move in style.'
+    - '&8Usable in Lobbies'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+  pets:
+    slot: 51
+    icon: BONE
+    name: '&a&lPets'
+    lore:
+    - ''
+    - '&7Life on a server can get'
+    - '&7lonely sometimes. Summon an'
+    - '&7adorable pet to follow you'
+    - '&7around and cheer you up!'
+    - '&8Usable in Lobbies'
+    - ''
+    - 'You own 0/0'
+    - ''
+    - '&aLeft-Click to View Category'
+GadgetMenu:
+  name: Gadgets
+  size: 54
+  GlassPanes: false
+  back:
+    slot: 4
+    icon: BED
+    name: '&aBack to Main Menu'
+  throwingtnt:
+    slot: 12
+    icon: TNT
+    name: '&a&lTNT'
+    lore:
+    - ''
+    - 'Throwing TNT at Mineplex staff'
+    - 'is highly encouraged'
+    - ''
+    - 'You own &a%amo%'
+    - ''
+  epearl:
+    slot: 10
+    icon: ENDER_PEARL
+    name: '&a&lEthereal Pearl'
+    lore:
+    - ''
+    - 'These pearls are stolen from'
+    - 'sleeping Enderman!'
+    - ''
+    - 'You own &a%amo%'
+    - ''
+  fireworkgadget:
+    slot: 11
+    icon: FIREWORK
+    name: '&a&lFirework'
+    lore:
+    - ''
+    - 'Need to celebrate? These'
+    - 'fireworks should do the trick!'
+    - ''
+    - 'You own &a%amo%'
+    - ''
+  paintball:
+    slot: 15
+    icon: GOLD_BARDING
+    name: '&a&lPaintball Gun'
+    lore:
+    - ''
+    - 'PEW PEW PEW!'
+    - ''
+    - 'You own &a%amo%'
+    - ''
+ParticleMenu:
+  name: Particle Effects
+  size: 54
+  GlassPanes: true
+  legendary:
+    slot: 0
+    icon: EMERALD
+    name: '&a&lLegendary Particle'
+    lore:
+    - ''
+    - The legends are true,
+    - summon your ancient aura
+    - to amaze all around you
+  ultra:
+    slot: 1
+    icon: DIAMOND
+    name: '&b&lUltra Particle'
+    lore:
+    - ''
+    - The most ultraest
+    - particle
+  hero:
+    slot: 2
+    icon: DIAMOND
+    name: '&d&lHero Particle'
+    lore:
+    - ''
+    - Not all heroes wear
+    - capes, but you do.
+PunishMenu:
+  name: '            Punish'
+  size: 54
+  chat:
+    slot: 10
+    name: '&a&lChat Offense'
+    icon: BOOK_AND_QUILL
+    lore:
+    - '&7Verbal Abuse, Spam, Harassment, Trolling, etc'
+  sev1chat:
+    slot: 19
+    name: '&a&lSeverity 1'
+    icon: INK_SACK
+    data: 2
+    lore:
+    - '&rPast Offenses: &e%chat1%'
+    - '&rMute Duration: &e%chat1dur%'
+    - ''
+    - '&7Light Spam'
+    - '&r   Sending the same message 2-5 times'
+    - ''
+    - '&7Light Advertising;'
+    - '&r   ''anyone want to play on minecade?'
+    - ''
+    - '&7Light Abuse/Harrassment'
+    - '&r   ''you suck a this game'''
+    - ''
+    - '&7Hackusations'
+    - '&r   ''you''re such a hacker!'''
+    - ''
+    - '&7Trolling'
+    - ''
+    - '&2Give warning if 0 Past Offenses and 0 Warnings.'
+  sev2chat:
+    slot: 28
+    name: '&a&lSeverity 2'
+    icon: INK_SACK
+    data: 11
+    lore:
+    - '&rPast Offenses: &e%chat2%'
+    - '&rMute Duration: &e%chat2dur%'
+    - ''
+    - '&7Medium Spam'
+    - '&r   Sending the same message 6-20 times'
+    - ''
+    - '&7Medium Advertising;'
+    - '&r   ''join crap.server.net'' - posted once'
+    - ''
+    - '&7Medium Abuse/Harrassment'
+    - '&r   ''piss off you stupied newb'''
+    - '&r   ''SHIT ADMINS ARE SHIT!!!'''
+    - '&r   ''you''re terrible, learn to play'''
+    - ''
+    - '&7Avoiding Chat Filter'
+    - '&r   ''F|_|<K YOU'''
+    rank: (mod|srmod|admin|dev|owner|support|leader)
+  sev3chat:
+    slot: 37
+    name: '&a&lSeverity 3'
+    icon: INK_SACK
+    data: 1
+    lore:
+    - '&rPast Offenses: &e%chat3%'
+    - '&rMute Duration: &e%chat3dur%'
+    - ''
+    - '&7Severe Medium'
+    - '&r   Sending the same message 20+ times'
+    - '&r   Only really used for a spam bot'
+    - ''
+    - '&7Severe Abuse/Harrassment'
+    - '&r   ''go fucking die in a fire you fucking sack of shit'''
+    rank: (mod|srmod|admin|dev|owner|support|leader)
+  general:
+    slot: 12
+    name: '&a&lGeneral Offense'
+    icon: HOPPER
+    lore:
+    - '&7Command/Map/Class/Skill exploits, etc'
+  sev1general:
+    slot: 21
+    name: '&a&lSeverity 1'
+    icon: INK_SACK
+    data: 2
+    lore:
+    - '&rPast Offenses: &e%gameplay1%'
+    - '&rBan Duration: &e%gameplay1dur%'
+    - ''
+    - '&7Team Killing'
+    - '&r   Intentionally killing your team mates'
+    - ''
+    - '&7Trolling (Gameplay)'
+    - '&r   Using abilities to trap players in spawn'
+    - ''
+    - '&7Glitch Exploiting'
+    - '&r   Using an exploit to gain an advantage'
+  client:
+    slot: 14
+    name: '&a&lClient Mod'
+    icon: IRON_SWORD
+    lore:
+    - '&7Forcefield, Speed, Fly, Inventory Hacks, etc'
+  sev1client:
+    slot: 23
+    name: '&a&lSeverity 1'
+    icon: INK_SACK
+    data: 2
+    lore:
+    - '&rPast Offenses: &e%client1%'
+    - '&rBan Duration: &e%client1dur%'
+    - ''
+    - '&7Examples'
+    - '&r   Damage Indicators'
+    - '&r   Player radar'
+  sev2client:
+    slot: 32
+    name: '&a&lSeverity 2'
+    icon: INK_SACK
+    data: 11
+    lore:
+    - '&rPast Offenses: &e%client2%'
+    - '&rBan Duration: &e%client2dur%'
+    - ''
+    - '&7Hacks:'
+    - '&r   Forcefield'
+    - '&r   Speed Hack'
+    - '&r   Reach Hack'
+    - '&r   Speed Hack'
+    - '&r   Other Hack'
+    - ''
+    - '&7Hack Reports (SR & FR):'
+    - '&r   Forcefield'
+    - '&r   Speed Hack'
+    - '&r   Reach Hack'
+    - '&r   Speed Hack'
+    - '&r   Other Hack'
+    - '&r   Fly Hack'
+    rank: (mod|srmod|admin|dev|owner|support|leader)
+  sev3client:
+    slot: 41
+    name: '&a&lSeverity 3'
+    icon: INK_SACK
+    data: 1
+    lore:
+    - '&rPast Offenses: &e%client3%'
+    - '&rBan Duration: &e%client3dur%'
+    - ''
+    - '&7Hacks:'
+    - '&r   Fly Hack'
+    - ''
+    - '&c&lWARNING:'
+    - '&cUse Severity 2 for Forums/Staff Reports'
+    rank: (mod|srmod|admin|dev|owner|support|leader)
+  permban:
+    slot: 34
+    name: '&a&lPermanent Ban'
+    icon: REDSTONE_BLOCK
+    lore:
+    - '&rBan Duration: &ePermanent'
+    - ''
+    - '&2Must supply a detailed reason for Ban.'
+    rank: (mod|srmod|admin|dev|owner|support|leader)
+  permmute:
+    slot: 43
+    name: '&a&lPermanent Mute'
+    icon: BOOK_AND_QUILL
+    lore:
+    - '&rMute Duration: &ePermanent'
+    - ''
+    - '&7Severe Advertising:'
+    - '&r   ''JOIN MINECADE! THIS SUCKS!'
+    - '&R   ''join crap.server.net! FREE ADMIN!'
+    - ''
+    - '&2Must supply a detailed reason for Mute'
+    rank: (mod|srmod|admin|dev|owner|support|leader)
+  warning:
+    slot: 25
+    name: '&a&lWarning'
+    icon: PAPER
+    lore:
+    - ''
+    - '&7Example Warning Input;'
+    - '&r  Spam - Repeatedly writing MEOW'
+    - '&r  Swearing - saying ''fuck'' and ''shit'''
+    - '&r  Hack Accusation - Accused Tomp13 of hacking'
+    - '&r  Trolling - was trying to make bob angry in chat'
+  clearhistory:
+    slot: 0
+    name: '&4Clear Player History'
+    icon: NETHER_STAR
+    rank: (owner|dev|leader)
+  ipban:
+    slot: 8
+    name: '&4IP-Ban'
+    icon: BEDROCK
+    rank: (owner|dev|leader)

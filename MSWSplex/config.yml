@@ -1,0 +1,183 @@
+#How many communities a player is allowed (Eternal +)
+MaxCommunities: 1
+#What will be displayed when a player hovers over the player amount
+#(Deleting this will disable it)
+MOTDList:
+- '&9&lMSWSplex &e&lv1.0 &7&lcoded by &e&lMSWS'
+#What the Title/Action Bar/Dragon messages will be shown
+Announcements:
+- '&b&lNOV &6&LPPC &B&LREWARD!'
+- '&b&lCLANS &D&L4th &b&lSEASON!'
+- '&4&lMSWSplex'
+- '&6&lMineplex &f&lGames'
+#The play count displayed to a player (plus the actual amount), setting to -1 will get Mineplex's count
+FakePlayers: -1
+#Rate of which the action bar is changed
+AnnounceRate: 20
+#Random messages that will be sent if someone does /tell [player]
+DMessages:
+- 'Hello, do you have any wild boars for purchase?'
+- 'There''s a snake in my boot!'
+- 'Monk, I need a Monk!'
+- 'Hi, I''m from planet minecraft, op me plz dooooood!'
+- 'Somebody''s poisoned the waterhole!'
+- 'MORE ORBZ MORE ORBZ MORE ORBZ MORE ORBZ!'
+- 'Chiss is a chiss and chiss chiss.'
+- '*_*'
+- '#swag'
+- 'Everything went better then I thought.'
+- 'HAVE A CHICKEN!'
+- 'follow me, i have xrays'
+- 'I''m making a java'
+- 'Do you talk to strangers?  I have candy if it helps.'
+- 'Solid 2.9/10'
+- 'close your eyes to sleep'
+- 'I crashed because my internet ran out.'
+- 'I saw morgan freeman on a breaking bad ad on a bus.'
+- 'Where is the volume control?'
+- 'I saw you playing on youtube with that guy and stuff.'
+- 'Your worms must be worse than useless.'
+- 'meow'
+- '7'
+- 'Don''t you wish your girlfriend was hot like me?'
+- 'how do you play mindcrafts?'
+- '7 cats meow meow meow meow meow meow meow'
+- 'For King Jonalon!!!!!'
+- 'Do you like apples?'
+- 'I''m Happy Happy Happy.'
+- 'kthxbye'
+#I recommend against changing any values
+Ranks:
+  default:
+    prefix: '&r&r'
+    rank: 0
+  ultra:
+    prefix: '&b&lULTRA '
+    rank: 1
+  hero:
+    prefix: '&d&lHERO '
+    rank: 2
+  legend:
+    prefix: '&a&lLEGEND '
+    rank: 3
+  titan:
+    prefix: '&c&lTITAN '
+    rank: 4
+  eternal:
+    prefix: '&3&lETERNAL '
+    rank: 5
+  yt:
+    prefix: '&5&lYT '
+    rank: 6
+  youtube:
+    prefix: '&c&lYOUTUBE '
+    rank: 7
+  builder:
+    prefix: '&9&lBUILDER '
+    rank: 8
+  mapper:
+    prefix: '&9&LMAPPER '
+    rank: 9
+  maplead:
+    prefix: '&9&LMAPLEAD '
+    rank: 10
+  trainee:
+    prefix: '&6&lTRAINEE '
+    rank: 11
+  mod:
+    prefix: '&6&LMOD '
+    rank: 12
+  srmod:
+    prefix: '&6&LSR.MOD '
+    rank: 13
+  media:
+    prefix: '&9&LMEDIA '
+    rank: 14
+  support:
+    prefix: '&9&LSUPPORT '
+    rank: 15
+  admin:
+    prefix: '&4&LADMIN '
+    rank: 16
+  dev:
+    prefix: '&4&LDEV '
+    rank: 17
+  leader:
+    prefix: '&4&LLEADER '
+    rank: 18
+  owner:
+    prefix: '&4&LOWNER '
+    rank: 19
+#What features are enabled/disabled
+Features:
+  scoreboard: true
+  chatformat: true
+  filter: true
+  ranks: true
+  eventcontrol: true
+  chests: true
+  levels: true
+  messaging: true
+  disguise: true
+  report: true
+  guis: true
+  punish: true
+  events: true
+  announcements: true
+  lobbies: true
+  customtab: true
+  communities: true
+  commands:
+    team: true
+    invsee: true
+    motd: true
+    setfake: true
+    rename: true
+    prefs: true
+    npc: true
+    holo: true
+    restart: true
+    radius: true
+    up: true
+    notify: true
+    list: true
+    vanish: true
+    hubitems: true
+    party: true
+    ignoring: true
+    stats: true
+    time: true
+    settime: true
+    saveall: true
+    mps: true
+    leave: true
+    rules: true
+    server: true
+    loadlobby: true
+    friends: true
+    events: true
+    testrank: true
+    a: true
+    give: true
+    clear: true
+    gamemode: true
+    teleport: true
+    s: true
+    announce: true
+    silence: true
+    chatslow: true
+    find: true
+    applyusernames: true
+    radius: true
+    spawn: true
+    kill: true
+    enchant: true
+    heal: true
+    ping: true
+    friend: true
+    parties: true
+    up: true
+    freeze: true
+    restart: true
+    reload: true
+    news: true
